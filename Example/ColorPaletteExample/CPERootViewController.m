@@ -2,8 +2,19 @@
 //  CPERootViewController.m
 //  ColorPaletteExample
 //
-//  Created by Chris Jeane on 4/28/14.
-//  Copyright (c) 2014 Chris Jeane. All rights reserved.
+//  Copyright (C) 2014 Chris Jeane
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+//  (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge,
+//  publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+//  subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+//  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
 #import "CPERootViewController.h"
@@ -23,8 +34,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    // Configure the page view controller and add it as a child view controller.
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
 
@@ -37,26 +46,21 @@
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
 
-    // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
     CGRect pageViewRect = self.view.bounds;
     self.pageViewController.view.frame = pageViewRect;
 
     [self.pageViewController didMoveToParentViewController:self];
 
-    // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (CPEModelController *)modelController
 {
-     // Return the model controller object, creating it if necessary.
-     // In more complex implementations, the model controller may be passed to the view controller.
     if (!_modelController) {
         _modelController = [[CPEModelController alloc] init];
     }
@@ -65,16 +69,8 @@
 
 #pragma mark - UIPageViewController delegate methods
 
-/*
-- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
-{
-    
-}
- */
-
 - (UIPageViewControllerSpineLocation)pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
-    // Set the spine position to "min" and the page view controller's view controllers array to contain just one view controller. Setting the spine position to 'UIPageViewControllerSpineLocationMid' in landscape orientation sets the doubleSided property to YES, so set it to NO here.
     UIViewController *currentViewController = self.pageViewController.viewControllers[0];
     NSArray *viewControllers = @[currentViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];

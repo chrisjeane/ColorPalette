@@ -7,15 +7,14 @@
 Pod::Spec.new do |s|
   s.name             = "ColorPalette"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ColorPalette."
+  s.summary          = "Allows colors to be defined and managed outside of code."
   s.description      = <<-DESC
-                       An optional longer description of ColorPalette
+                       ColorPalette gets the colors out of your code.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       * Define your colors in a palette file.
+                       * Use your colors anywhere by name.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/chrisjeane/ColorPalette"
   s.license          = 'MIT'
   s.author           = { "Chris Jeane" => "chrisjeane@gmail.com" }
   s.source           = { :git => "https://github.com/chrisjeane/ColorPalette.git", :tag => s.version.to_s }
@@ -24,9 +23,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/**/*.{h,m}'
-
-  s.ios.exclude_files = 'Classes/osx'
-  # s.public_header_files = 'Classes/**/*.h'
+  s.source_files = 'Classes/ios/*.{h,m}'
+  
+  s.public_header_files = 'Classes/ios/ColorPalette.h'
   s.dependency 'YAML-Framework', '~> 0.0.2'
 end

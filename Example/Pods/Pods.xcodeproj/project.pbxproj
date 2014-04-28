@@ -1,870 +1,2041 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		067A81EB66EE42D19807BB6A /* Pods-ColorPaletteExample-YAML-Framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB1F30824BEBB3E4CB1E /* Pods-ColorPaletteExample-YAML-Framework-dummy.m */; };
-		08C30FC4646B4384B9B0B7B7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 479FDDA04E64401DBA47D446 /* config.h */; };
-		170E3DF73D62450C825E9C69 /* ColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A525A07C5D438FBE623602 /* ColorPalette.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		1AE2722AE6844F6CA333E2A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07831DA1EB43989D5762AF /* Foundation.framework */; };
-		3A2220F897E14AE394D6FDFE /* libPods-ColorPaletteExample-YAML-Framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1311F69EE3B4E8D922D7D74 /* libPods-ColorPaletteExample-YAML-Framework.a */; };
-		5B69B9C654A94A9FAF0C3365 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C3876B7E5D6E4E61A2BF2270 /* config.h */; };
-		63A38C577E5C4B67A8B74CDC /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E077C95B2DD45B7B1A07709 /* parser.c */; };
-		65D281A3DC7C49248D01C83E /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = B49926E965CD4FBB8C1037CF /* api.c */; };
-		7376DF533C604B6E87BD50EA /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9636C92980DE4411A463125E /* reader.c */; };
-		75A270CA99C94D9FAE1C902C /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C73D3808F9429095DD5692 /* yaml_private.h */; };
-		7C75ADF3BBD74FA0BB62964F /* libPods-ColorPaletteExample-LibYAML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2FCF8D52EA41939BE898F4 /* libPods-ColorPaletteExample-LibYAML.a */; };
-		7D14B1D3ECC44D57A68DD415 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6D87A9DEDB146C795EB74F0 /* dumper.c */; };
-		83AD6401D8EF4F348B85B52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07831DA1EB43989D5762AF /* Foundation.framework */; };
-		83D567A2190F0266002B63E7 /* CPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D567A1190F0266002B63E7 /* CPColor.m */; };
-		89BACD696C2442BA84840309 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 47072106D82941D2966FFA82 /* yaml.h */; };
-		9A1C0497B43B4564A69E5770 /* libPods-ColorPaletteExample-ColorPalette.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886ADE74E6C348EEB03F86DE /* libPods-ColorPaletteExample-ColorPalette.a */; };
-		9D3CEE60E2574BCB8D84DD28 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = B057FCB21FEB475198FE12B6 /* emitter.c */; };
-		B21DF3708A2A44EE878B331A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07831DA1EB43989D5762AF /* Foundation.framework */; };
-		B788D489BCE14B5699452082 /* Pods-ColorPaletteExample-LibYAML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2BC01C7764065BD6389EB /* Pods-ColorPaletteExample-LibYAML-dummy.m */; };
-		B8B98D2BA7C94F6ABCD46F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07831DA1EB43989D5762AF /* Foundation.framework */; };
-		BD29704BE3CE4398BA9A22D5 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E45121C9CC2444B4B3DBE038 /* YAMLSerialization.m */; };
-		CFF7296DF36548699169AD81 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F587C3E9FB247218A48EA60 /* loader.c */; };
-		E94F41C6B18C41F6BFA53DB0 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 65CBF4693F9D4F66BE2B7353 /* writer.c */; };
-		EAD6B8AFB3A144B3BBFAFCDA /* Pods-ColorPaletteExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D55AE2FDC34CB48133D92E /* Pods-ColorPaletteExample-dummy.m */; };
-		EB0D4B14B53242B7A1D48714 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B893EBE34FB4E6D97871CAE /* scanner.c */; };
-		F044A0730A7E4FF39BB5FE12 /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFDA1942FEC449391716960 /* YAMLSerialization.h */; };
-		F12FE548114B4B03BA4502B7 /* Pods-ColorPaletteExample-ColorPalette-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5A1DB08E149D7B5849796 /* Pods-ColorPaletteExample-ColorPalette-dummy.m */; };
-		F4E87165B300493392D64AAE /* ColorPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B038C156984926A3DF293B /* ColorPalette.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		46F6E88AE9D34135ACC6EAA3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5B8086173D34568AE95D905;
-			remoteInfo = "Pods-ColorPaletteExample-YAML-Framework";
-		};
-		48A91ED221AF4E8992BB9B40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5214D4C18A38467AB7AC80B0;
-			remoteInfo = "Pods-ColorPaletteExample-LibYAML";
-		};
-		A4E1FDC7A64646018726586D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5214D4C18A38467AB7AC80B0;
-			remoteInfo = "Pods-ColorPaletteExample-LibYAML";
-		};
-		D86D4E59F79846A0B9F39BA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA1D1E88CDC4466492DEE3D2;
-			remoteInfo = "Pods-ColorPaletteExample-ColorPalette";
-		};
-		E7572D931DAD41579FF7CAF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5B8086173D34568AE95D905;
-			remoteInfo = "Pods-ColorPaletteExample-YAML-Framework";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0394B45D153F48D486E0D1CE /* Pods-ColorPaletteExample-LibYAML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-LibYAML.xcconfig"; sourceTree = "<group>"; };
-		17285F64CB6347C3B91F2A94 /* Pods-ColorPaletteExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorPaletteExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		18ECD12E7D974FD79161418C /* libPods-ColorPaletteExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPaletteExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD5A1DB08E149D7B5849796 /* Pods-ColorPaletteExample-ColorPalette-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPaletteExample-ColorPalette-dummy.m"; sourceTree = "<group>"; };
-		2118D9554BBB4C3DA335E062 /* Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig"; sourceTree = "<group>"; };
-		2CFDA1942FEC449391716960 /* YAMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YAMLSerialization.h; sourceTree = "<group>"; };
-		3B893EBE34FB4E6D97871CAE /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = src/scanner.c; sourceTree = "<group>"; };
-		3E077C95B2DD45B7B1A07709 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parser.c; path = src/parser.c; sourceTree = "<group>"; };
-		47072106D82941D2966FFA82 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = include/yaml.h; sourceTree = "<group>"; };
-		479FDDA04E64401DBA47D446 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		5C5E86230E1A4ACC932294F6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		63A525A07C5D438FBE623602 /* ColorPalette.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ColorPalette.m; path = Classes/ios/ColorPalette.m; sourceTree = "<group>"; };
-		65CBF4693F9D4F66BE2B7353 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = writer.c; path = src/writer.c; sourceTree = "<group>"; };
-		683CFB1F30824BEBB3E4CB1E /* Pods-ColorPaletteExample-YAML-Framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPaletteExample-YAML-Framework-dummy.m"; sourceTree = "<group>"; };
-		79E36A0A01294536B517882A /* Pods-ColorPaletteExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample.xcconfig"; sourceTree = "<group>"; };
-		7B0AAB3276E84C8DA6BC0B7B /* Pods-ColorPaletteExample-YAML-Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-YAML-Framework.xcconfig"; sourceTree = "<group>"; };
-		7F587C3E9FB247218A48EA60 /* loader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = loader.c; path = src/loader.c; sourceTree = "<group>"; };
-		83D567A0190F0266002B63E7 /* CPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPColor.h; path = Classes/ios/CPColor.h; sourceTree = "<group>"; };
-		83D567A1190F0266002B63E7 /* CPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPColor.m; path = Classes/ios/CPColor.m; sourceTree = "<group>"; };
-		886ADE74E6C348EEB03F86DE /* libPods-ColorPaletteExample-ColorPalette.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPaletteExample-ColorPalette.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F664829389B4431B634A90A /* Pods-ColorPaletteExample-LibYAML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-LibYAML-Private.xcconfig"; sourceTree = "<group>"; };
-		93D4B3843E924690A79AB6A2 /* Pods-ColorPaletteExample-YAML-Framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPaletteExample-YAML-Framework-prefix.pch"; sourceTree = "<group>"; };
-		9636C92980DE4411A463125E /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = reader.c; path = src/reader.c; sourceTree = "<group>"; };
-		9C2FCF8D52EA41939BE898F4 /* libPods-ColorPaletteExample-LibYAML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPaletteExample-LibYAML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9D55AE2FDC34CB48133D92E /* Pods-ColorPaletteExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPaletteExample-dummy.m"; sourceTree = "<group>"; };
-		B057FCB21FEB475198FE12B6 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = src/emitter.c; sourceTree = "<group>"; };
-		B49926E965CD4FBB8C1037CF /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = src/api.c; sourceTree = "<group>"; };
-		C1311F69EE3B4E8D922D7D74 /* libPods-ColorPaletteExample-YAML-Framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPaletteExample-YAML-Framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3876B7E5D6E4E61A2BF2270 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "yaml-0.1.4/config.h"; sourceTree = "<group>"; };
-		C6D87A9DEDB146C795EB74F0 /* dumper.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = dumper.c; path = src/dumper.c; sourceTree = "<group>"; };
-		C7AEC339C1324725ACDB232D /* Pods-ColorPaletteExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColorPaletteExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBAD268FF3984A2A83B4454D /* Pods-ColorPaletteExample-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPaletteExample-environment.h"; sourceTree = "<group>"; };
-		CE07831DA1EB43989D5762AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CFE8D8A92A474805B9646975 /* Pods-ColorPaletteExample-ColorPalette-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPaletteExample-ColorPalette-prefix.pch"; sourceTree = "<group>"; };
-		D20DDFEF2EAB4A83831FB935 /* Pods-ColorPaletteExample-ColorPalette.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-ColorPalette.xcconfig"; sourceTree = "<group>"; };
-		D4EC0A26CD55424CA8A9B27A /* Pods-ColorPaletteExample-ColorPalette-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPaletteExample-ColorPalette-Private.xcconfig"; sourceTree = "<group>"; };
-		D8F6715D7D374A31A3A69040 /* Pods-ColorPaletteExample-LibYAML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPaletteExample-LibYAML-prefix.pch"; sourceTree = "<group>"; };
-		E45121C9CC2444B4B3DBE038 /* YAMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YAMLSerialization.m; sourceTree = "<group>"; };
-		E5C73D3808F9429095DD5692 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = src/yaml_private.h; sourceTree = "<group>"; };
-		E6A2BC01C7764065BD6389EB /* Pods-ColorPaletteExample-LibYAML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPaletteExample-LibYAML-dummy.m"; sourceTree = "<group>"; };
-		F7B038C156984926A3DF293B /* ColorPalette.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ColorPalette.h; path = Classes/ios/ColorPalette.h; sourceTree = "<group>"; };
-		F80FB04DB1E146C59F9DD05B /* Pods-ColorPaletteExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorPaletteExample-resources.sh"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0696E361B24C42D7B0FEA5C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21DF3708A2A44EE878B331A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B60B8D06E264ED88A1E3AEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8B98D2BA7C94F6ABCD46F10 /* Foundation.framework in Frameworks */,
-				9A1C0497B43B4564A69E5770 /* libPods-ColorPaletteExample-ColorPalette.a in Frameworks */,
-				7C75ADF3BBD74FA0BB62964F /* libPods-ColorPaletteExample-LibYAML.a in Frameworks */,
-				3A2220F897E14AE394D6FDFE /* libPods-ColorPaletteExample-YAML-Framework.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9E3A4F6D8CC542E59DC75743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83AD6401D8EF4F348B85B52E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE38D92B191E48F088075F59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AE2722AE6844F6CA333E2A0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1C41923E19E24590B431B507 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B0AAB3276E84C8DA6BC0B7B /* Pods-ColorPaletteExample-YAML-Framework.xcconfig */,
-				2118D9554BBB4C3DA335E062 /* Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig */,
-				683CFB1F30824BEBB3E4CB1E /* Pods-ColorPaletteExample-YAML-Framework-dummy.m */,
-				93D4B3843E924690A79AB6A2 /* Pods-ColorPaletteExample-YAML-Framework-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		1EA9E03A9AC741B8BE8BA028 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D20DDFEF2EAB4A83831FB935 /* Pods-ColorPaletteExample-ColorPalette.xcconfig */,
-				D4EC0A26CD55424CA8A9B27A /* Pods-ColorPaletteExample-ColorPalette-Private.xcconfig */,
-				1AD5A1DB08E149D7B5849796 /* Pods-ColorPaletteExample-ColorPalette-dummy.m */,
-				CFE8D8A92A474805B9646975 /* Pods-ColorPaletteExample-ColorPalette-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		3DEF66C4C0554C2D9566A1D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C2A0999BA11438F913F0D49 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		47C5C59A6E0D48EF981D0AC3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C67E8EC3315F40B6BF505268 /* LibYAML */,
-				A62586FC48AE47229331BB67 /* YAML-Framework */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		47DB3268AE13422D8CB3109C /* Pods-ColorPaletteExample */ = {
-			isa = PBXGroup;
-			children = (
-				79E36A0A01294536B517882A /* Pods-ColorPaletteExample.xcconfig */,
-				C7AEC339C1324725ACDB232D /* Pods-ColorPaletteExample-acknowledgements.markdown */,
-				17285F64CB6347C3B91F2A94 /* Pods-ColorPaletteExample-acknowledgements.plist */,
-				A9D55AE2FDC34CB48133D92E /* Pods-ColorPaletteExample-dummy.m */,
-				CBAD268FF3984A2A83B4454D /* Pods-ColorPaletteExample-environment.h */,
-				F80FB04DB1E146C59F9DD05B /* Pods-ColorPaletteExample-resources.sh */,
-			);
-			name = "Pods-ColorPaletteExample";
-			sourceTree = "<group>";
-		};
-		4A21DDB2C7464E9AA21B6067 = {
-			isa = PBXGroup;
-			children = (
-				5C5E86230E1A4ACC932294F6 /* Podfile */,
-				AB7247C262E847C29136DCCA /* Development Pods */,
-				3DEF66C4C0554C2D9566A1D6 /* Frameworks */,
-				47C5C59A6E0D48EF981D0AC3 /* Pods */,
-				50669133E7744C388BE221E0 /* Products */,
-				4FDE26E93CFA48E5A85EF3B6 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		4FDE26E93CFA48E5A85EF3B6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				47DB3268AE13422D8CB3109C /* Pods-ColorPaletteExample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		50669133E7744C388BE221E0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18ECD12E7D974FD79161418C /* libPods-ColorPaletteExample.a */,
-				886ADE74E6C348EEB03F86DE /* libPods-ColorPaletteExample-ColorPalette.a */,
-				9C2FCF8D52EA41939BE898F4 /* libPods-ColorPaletteExample-LibYAML.a */,
-				C1311F69EE3B4E8D922D7D74 /* libPods-ColorPaletteExample-YAML-Framework.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C2A0999BA11438F913F0D49 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CE07831DA1EB43989D5762AF /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		8B7E13C439224F1E9DF4D887 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0394B45D153F48D486E0D1CE /* Pods-ColorPaletteExample-LibYAML.xcconfig */,
-				8F664829389B4431B634A90A /* Pods-ColorPaletteExample-LibYAML-Private.xcconfig */,
-				E6A2BC01C7764065BD6389EB /* Pods-ColorPaletteExample-LibYAML-dummy.m */,
-				D8F6715D7D374A31A3A69040 /* Pods-ColorPaletteExample-LibYAML-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		9F57642585B04DD8BC759EAA /* ColorPalette */ = {
-			isa = PBXGroup;
-			children = (
-				F7B038C156984926A3DF293B /* ColorPalette.h */,
-				63A525A07C5D438FBE623602 /* ColorPalette.m */,
-				83D567A0190F0266002B63E7 /* CPColor.h */,
-				83D567A1190F0266002B63E7 /* CPColor.m */,
-				1EA9E03A9AC741B8BE8BA028 /* Support Files */,
-			);
-			name = ColorPalette;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A62586FC48AE47229331BB67 /* YAML-Framework */ = {
-			isa = PBXGroup;
-			children = (
-				2CFDA1942FEC449391716960 /* YAMLSerialization.h */,
-				E45121C9CC2444B4B3DBE038 /* YAMLSerialization.m */,
-				C3876B7E5D6E4E61A2BF2270 /* config.h */,
-				1C41923E19E24590B431B507 /* Support Files */,
-			);
-			path = "YAML-Framework";
-			sourceTree = "<group>";
-		};
-		AB7247C262E847C29136DCCA /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9F57642585B04DD8BC759EAA /* ColorPalette */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C67E8EC3315F40B6BF505268 /* LibYAML */ = {
-			isa = PBXGroup;
-			children = (
-				B49926E965CD4FBB8C1037CF /* api.c */,
-				479FDDA04E64401DBA47D446 /* config.h */,
-				C6D87A9DEDB146C795EB74F0 /* dumper.c */,
-				B057FCB21FEB475198FE12B6 /* emitter.c */,
-				7F587C3E9FB247218A48EA60 /* loader.c */,
-				3E077C95B2DD45B7B1A07709 /* parser.c */,
-				9636C92980DE4411A463125E /* reader.c */,
-				3B893EBE34FB4E6D97871CAE /* scanner.c */,
-				65CBF4693F9D4F66BE2B7353 /* writer.c */,
-				47072106D82941D2966FFA82 /* yaml.h */,
-				E5C73D3808F9429095DD5692 /* yaml_private.h */,
-				8B7E13C439224F1E9DF4D887 /* Support Files */,
-			);
-			path = LibYAML;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		19AD3F548CA24BDE9E77964E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4E87165B300493392D64AAE /* ColorPalette.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58F85F0B8737484B88FC5C15 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08C30FC4646B4384B9B0B7B7 /* config.h in Headers */,
-				89BACD696C2442BA84840309 /* yaml.h in Headers */,
-				75A270CA99C94D9FAE1C902C /* yaml_private.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1F282E3EA734354B98929AA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F044A0730A7E4FF39BB5FE12 /* YAMLSerialization.h in Headers */,
-				5B69B9C654A94A9FAF0C3365 /* config.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		5214D4C18A38467AB7AC80B0 /* Pods-ColorPaletteExample-LibYAML */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B6A9ACFE0C146F5A874B252 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-LibYAML" */;
-			buildPhases = (
-				03EE534C423D4406A1B97111 /* Sources */,
-				EE38D92B191E48F088075F59 /* Frameworks */,
-				58F85F0B8737484B88FC5C15 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ColorPaletteExample-LibYAML";
-			productName = "Pods-ColorPaletteExample-LibYAML";
-			productReference = 9C2FCF8D52EA41939BE898F4 /* libPods-ColorPaletteExample-LibYAML.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AA1D1E88CDC4466492DEE3D2 /* Pods-ColorPaletteExample-ColorPalette */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC153A78188D4143BFDEA4FE /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-ColorPalette" */;
-			buildPhases = (
-				CBFAF13FB0BC4241981BC86E /* Sources */,
-				0696E361B24C42D7B0FEA5C4 /* Frameworks */,
-				19AD3F548CA24BDE9E77964E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BD7F28B9CE640C296CE03E9 /* PBXTargetDependency */,
-			);
-			name = "Pods-ColorPaletteExample-ColorPalette";
-			productName = "Pods-ColorPaletteExample-ColorPalette";
-			productReference = 886ADE74E6C348EEB03F86DE /* libPods-ColorPaletteExample-ColorPalette.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C5B8086173D34568AE95D905 /* Pods-ColorPaletteExample-YAML-Framework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F90AEDBF1C6402AA7E2B532 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-YAML-Framework" */;
-			buildPhases = (
-				4367E0B24F2B46AB9F422431 /* Sources */,
-				9E3A4F6D8CC542E59DC75743 /* Frameworks */,
-				C1F282E3EA734354B98929AA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A6799E77C8FA4A75B1BBE0FA /* PBXTargetDependency */,
-			);
-			name = "Pods-ColorPaletteExample-YAML-Framework";
-			productName = "Pods-ColorPaletteExample-YAML-Framework";
-			productReference = C1311F69EE3B4E8D922D7D74 /* libPods-ColorPaletteExample-YAML-Framework.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DA4C85394BE4410BBB9099F8 /* Pods-ColorPaletteExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81F00B157F474793845C1731 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample" */;
-			buildPhases = (
-				9CBCD2CEC35E40D38BBF816D /* Sources */,
-				4B60B8D06E264ED88A1E3AEB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				950D85FB88D540EDB77BB26E /* PBXTargetDependency */,
-				280AEDFA1278459F80D9A9EE /* PBXTargetDependency */,
-				AA81CB05B29F452AB187F717 /* PBXTargetDependency */,
-			);
-			name = "Pods-ColorPaletteExample";
-			productName = "Pods-ColorPaletteExample";
-			productReference = 18ECD12E7D974FD79161418C /* libPods-ColorPaletteExample.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9DFE837F7EF740A4A3799DF8 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = AD8273D686214D96AB0E3227 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 4A21DDB2C7464E9AA21B6067;
-			productRefGroup = 50669133E7744C388BE221E0 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DA4C85394BE4410BBB9099F8 /* Pods-ColorPaletteExample */,
-				AA1D1E88CDC4466492DEE3D2 /* Pods-ColorPaletteExample-ColorPalette */,
-				5214D4C18A38467AB7AC80B0 /* Pods-ColorPaletteExample-LibYAML */,
-				C5B8086173D34568AE95D905 /* Pods-ColorPaletteExample-YAML-Framework */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		03EE534C423D4406A1B97111 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B788D489BCE14B5699452082 /* Pods-ColorPaletteExample-LibYAML-dummy.m in Sources */,
-				65D281A3DC7C49248D01C83E /* api.c in Sources */,
-				7D14B1D3ECC44D57A68DD415 /* dumper.c in Sources */,
-				9D3CEE60E2574BCB8D84DD28 /* emitter.c in Sources */,
-				CFF7296DF36548699169AD81 /* loader.c in Sources */,
-				63A38C577E5C4B67A8B74CDC /* parser.c in Sources */,
-				7376DF533C604B6E87BD50EA /* reader.c in Sources */,
-				EB0D4B14B53242B7A1D48714 /* scanner.c in Sources */,
-				E94F41C6B18C41F6BFA53DB0 /* writer.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4367E0B24F2B46AB9F422431 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				067A81EB66EE42D19807BB6A /* Pods-ColorPaletteExample-YAML-Framework-dummy.m in Sources */,
-				BD29704BE3CE4398BA9A22D5 /* YAMLSerialization.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CBCD2CEC35E40D38BBF816D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83D567A2190F0266002B63E7 /* CPColor.m in Sources */,
-				EAD6B8AFB3A144B3BBFAFCDA /* Pods-ColorPaletteExample-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CBFAF13FB0BC4241981BC86E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				170E3DF73D62450C825E9C69 /* ColorPalette.m in Sources */,
-				F12FE548114B4B03BA4502B7 /* Pods-ColorPaletteExample-ColorPalette-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		280AEDFA1278459F80D9A9EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5214D4C18A38467AB7AC80B0 /* Pods-ColorPaletteExample-LibYAML */;
-			targetProxy = A4E1FDC7A64646018726586D /* PBXContainerItemProxy */;
-		};
-		5BD7F28B9CE640C296CE03E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5B8086173D34568AE95D905 /* Pods-ColorPaletteExample-YAML-Framework */;
-			targetProxy = 46F6E88AE9D34135ACC6EAA3 /* PBXContainerItemProxy */;
-		};
-		950D85FB88D540EDB77BB26E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA1D1E88CDC4466492DEE3D2 /* Pods-ColorPaletteExample-ColorPalette */;
-			targetProxy = D86D4E59F79846A0B9F39BA0 /* PBXContainerItemProxy */;
-		};
-		A6799E77C8FA4A75B1BBE0FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5214D4C18A38467AB7AC80B0 /* Pods-ColorPaletteExample-LibYAML */;
-			targetProxy = 48A91ED221AF4E8992BB9B40 /* PBXContainerItemProxy */;
-		};
-		AA81CB05B29F452AB187F717 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5B8086173D34568AE95D905 /* Pods-ColorPaletteExample-YAML-Framework */;
-			targetProxy = E7572D931DAD41579FF7CAF1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		2C9F0F1CAE66491081B70948 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2118D9554BBB4C3DA335E062 /* Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-YAML-Framework-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		2F8BD30563074E2C89F23C28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79E36A0A01294536B517882A /* Pods-ColorPaletteExample.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		54056893E7274B7FA53B21D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2118D9554BBB4C3DA335E062 /* Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-YAML-Framework-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		917992A8A9D3445FA5EBA11D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-			};
-			name = Debug;
-		};
-		9CC59F2C53384986983D031F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4EC0A26CD55424CA8A9B27A /* Pods-ColorPaletteExample-ColorPalette-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-ColorPalette-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9F077B7F9F4F45A9BACD21CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4EC0A26CD55424CA8A9B27A /* Pods-ColorPaletteExample-ColorPalette-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-ColorPalette-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A907B3D810B24895A026E7C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F664829389B4431B634A90A /* Pods-ColorPaletteExample-LibYAML-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-LibYAML-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CBCE70D93A37417BAF526AB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79E36A0A01294536B517882A /* Pods-ColorPaletteExample.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DA17448468B148A1996633FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F664829389B4431B634A90A /* Pods-ColorPaletteExample-LibYAML-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-ColorPaletteExample-LibYAML-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E4DEACFB783A41BE8CE88E8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2F90AEDBF1C6402AA7E2B532 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-YAML-Framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C9F0F1CAE66491081B70948 /* Debug */,
-				54056893E7274B7FA53B21D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B6A9ACFE0C146F5A874B252 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-LibYAML" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A907B3D810B24895A026E7C6 /* Debug */,
-				DA17448468B148A1996633FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81F00B157F474793845C1731 /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBCE70D93A37417BAF526AB9 /* Debug */,
-				2F8BD30563074E2C89F23C28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD8273D686214D96AB0E3227 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				917992A8A9D3445FA5EBA11D /* Debug */,
-				E4DEACFB783A41BE8CE88E8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC153A78188D4143BFDEA4FE /* Build configuration list for PBXNativeTarget "Pods-ColorPaletteExample-ColorPalette" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F077B7F9F4F45A9BACD21CB /* Debug */,
-				9CC59F2C53384986983D031F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 9DFE837F7EF740A4A3799DF8 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0273F9EA5E6F41859B38B86B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2D3DF12AB7BD4EE295472B0A</string>
+				<string>C52613F2183F4C2FB303A8E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0298F9A2DB714B04ADBD2AB6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ColorPaletteExample-ColorPalette.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>04E09AC874C148FBB9434771</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6A3C607B1F2B43CB9221CB4C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0B39DEF68F974FB0AB8513B0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EB539BF8F5374A858B728B89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0C32CD2FA2CA477EB7A353B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-LibYAML-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0FDB801ECFF14878A18FF624</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C50F4711CEC04696BBEFEC72</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>10A176D4CD1F4507942B71B0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>BDBC3B28B7D74F0EB4D4024D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>AB8D36F1E6BE444AA4A5A766</string>
+			<key>remoteInfo</key>
+			<string>Pods-ColorPaletteExample-LibYAML</string>
+		</dict>
+		<key>19C3110D5CFC45C78A6B712D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4FC45ADB3D7D45FDAC16493B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>19D030F5E4ED459DB176A84A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ColorPalette.h</string>
+			<key>path</key>
+			<string>Classes/ios/ColorPalette.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B60E332F08B4A2BA3535552</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>49BDE1BDAF2E4AC2B3D0D775</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B7661B601E945D78D92F165</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2E2BDE6E62C445FABA73CCB7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-YAML-Framework-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1F1CB236B65441CD9E586F3F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>AB8D36F1E6BE444AA4A5A766</string>
+			<key>targetProxy</key>
+			<string>10A176D4CD1F4507942B71B0</string>
+		</dict>
+		<key>2064D1621B2944E28994E740</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7473F47836374350BB8CBCEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2153C864BA1E42A1B8000402</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4818674DC4A940A1AB6C76D4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2159A07542CF480BB14BF986</key>
+		<dict>
+			<key>fileRef</key>
+			<string>614E52C85CC54971BE128A25</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>21DC9DAAD8F8489FB1149474</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ACD47C6D71FC4B2AACCC2426</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2CB39F2674FA4BBFAFA8C3F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>writer.c</string>
+			<key>path</key>
+			<string>src/writer.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D3DF12AB7BD4EE295472B0A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DFBF331471F4F78BF3DE5B3</string>
+				<string>614E52C85CC54971BE128A25</string>
+				<string>4818674DC4A940A1AB6C76D4</string>
+				<string>32BB953E0F234637B7752C64</string>
+				<string>EB539BF8F5374A858B728B89</string>
+				<string>6A3C607B1F2B43CB9221CB4C</string>
+				<string>CD56F7DA673440A7A367BA36</string>
+				<string>C50F4711CEC04696BBEFEC72</string>
+				<string>2CB39F2674FA4BBFAFA8C3F5</string>
+				<string>38D067BC2225446D83A8AB70</string>
+				<string>7473F47836374350BB8CBCEC</string>
+				<string>E667B10244EB42F8B75FC8B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>LibYAML</string>
+			<key>path</key>
+			<string>LibYAML</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E2BDE6E62C445FABA73CCB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E2C28FC6C734315BE435752</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>2F971ACD800843B693A6806E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>config.h</string>
+			<key>path</key>
+			<string>yaml-0.1.4/config.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>31D616238E3745C7A0F6C58E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CPColor.h</string>
+			<key>path</key>
+			<string>Classes/ios/CPColor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3268CEA8C8894CDCBD5862EC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>38D067BC2225446D83A8AB70</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32BB953E0F234637B7752C64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>emitter.c</string>
+			<key>path</key>
+			<string>src/emitter.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>344D8E5E6AEA4C339A6B295D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FFD559D3BE3B40BF9325509A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35053C6D55604EA099E6A1EC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>BBBD26F6C2DE4305B14A45C5</string>
+			<key>targetProxy</key>
+			<string>D8EDE92B07E64D0AA64723C2</string>
+		</dict>
+		<key>361FAE634102498988623A7D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7E4ADF2F46564BBDBEDC5253</string>
+				<string>9FFE3CBB8055457BACE280C0</string>
+				<string>E23C4D9FAE9344688823E38E</string>
+				<string>685E0CA007BF48229C51C089</string>
+				<string>E389FC20F6AE48E9BB073357</string>
+				<string>F7CEA80AA76743BAA25F7105</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ColorPaletteExample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37943AC0A6144B4CA18CBFD3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>46C7E1E4A23647A88460AAB7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>382EED34453043238632C63A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2CB39F2674FA4BBFAFA8C3F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>38D067BC2225446D83A8AB70</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>yaml.h</string>
+			<key>path</key>
+			<string>include/yaml.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>393136D36DAC4997A31ED31E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>685E0CA007BF48229C51C089</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3CC0012D292A4E3490B33975</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ColorPalette.m</string>
+			<key>path</key>
+			<string>Classes/ios/ColorPalette.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3CECF39AC7664A249217EDF3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>19C3110D5CFC45C78A6B712D</string>
+				<string>7EC91E52879E4DD798C2B6CA</string>
+				<string>9BC05FE8EF0D4649B4A458A7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>404AD40A16A247BEA79766A7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7E4ADF2F46564BBDBEDC5253</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>40B1566C7B6E4EBCA5B11A47</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-LibYAML-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44AB888E99B24C14BC31D665</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7A90A81ECB6B43779580606D</string>
+				<string>0298F9A2DB714B04ADBD2AB6</string>
+				<string>B9D60F91C51240BD86DB101F</string>
+				<string>46C7E1E4A23647A88460AAB7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44E9158ED99A437EA07CBF38</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>46C7E1E4A23647A88460AAB7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ColorPaletteExample-YAML-Framework.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4818674DC4A940A1AB6C76D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>dumper.c</string>
+			<key>path</key>
+			<string>src/dumper.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>49BDE1BDAF2E4AC2B3D0D775</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>31D616238E3745C7A0F6C58E</string>
+				<string>4FC45ADB3D7D45FDAC16493B</string>
+				<string>19D030F5E4ED459DB176A84A</string>
+				<string>3CC0012D292A4E3490B33975</string>
+				<string>85B9E4A5DE5C4DBC88328038</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ColorPalette</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ABC62A46AE446F5A42EECF6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>71B3D540BAAA4B718494107D</string>
+			<key>targetProxy</key>
+			<string>CF0D9089364D495997A00A6D</string>
+		</dict>
+		<key>4F2535C7EE1A4D4BB3C4E9E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-ColorPalette-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FC45ADB3D7D45FDAC16493B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CPColor.m</string>
+			<key>path</key>
+			<string>Classes/ios/CPColor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>542E8F87D8AE48D28CAF6A58</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>AB8D36F1E6BE444AA4A5A766</string>
+			<key>targetProxy</key>
+			<string>F1E91C5AEB0B4A3A83FC7A58</string>
+		</dict>
+		<key>56E9FBDCEA1E407CAE0CF624</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACD47C6D71FC4B2AACCC2426</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5B05A4663DA14FF7AFAF9E7A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>BDBC3B28B7D74F0EB4D4024D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>BBBD26F6C2DE4305B14A45C5</string>
+			<key>remoteInfo</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework</string>
+		</dict>
+		<key>5C6F5AFB0F6C4B3B998561FC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>95066854A1854782BD5E0ECF</string>
+				<string>F0E00F420A664378A89C122F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5FFB155834B64A069578138F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F37EBA9B7B8147F7939FBCB7</string>
+				<string>2E2BDE6E62C445FABA73CCB7</string>
+				<string>D73BF188A31E4ACAAC7E8A77</string>
+				<string>E42BC1D4D8944F858D1B6441</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>614E52C85CC54971BE128A25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>config.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6846378020B949F1A0D01B8F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>21DC9DAAD8F8489FB1149474</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>685E0CA007BF48229C51C089</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>693CA924BC3441208F1D48CD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>72413C42AC87417C91753737</string>
+				<string>AE77A5B4A1E74699884FE112</string>
+				<string>2153C864BA1E42A1B8000402</string>
+				<string>89A38B7CABF044E9BDBD9AE0</string>
+				<string>0B39DEF68F974FB0AB8513B0</string>
+				<string>04E09AC874C148FBB9434771</string>
+				<string>7CC632115524442F8FB03280</string>
+				<string>0FDB801ECFF14878A18FF624</string>
+				<string>382EED34453043238632C63A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6A3C607B1F2B43CB9221CB4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>parser.c</string>
+			<key>path</key>
+			<string>src/parser.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B189001D881436E8C1196F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-ColorPalette.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6BDBC3F6354845ACAE7433B6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>717CA677C8F442F787A9C412</string>
+				<string>86AE85B018FF4C938B1E123C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6BE93F782AE345B4A27C7882</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F2535C7EE1A4D4BB3C4E9E4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-ColorPalette-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6DFBF331471F4F78BF3DE5B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>api.c</string>
+			<key>path</key>
+			<string>src/api.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>717CA677C8F442F787A9C412</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31D616238E3745C7A0F6C58E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>71B3D540BAAA4B718494107D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>995F746ACA31411DA3585814</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3CECF39AC7664A249217EDF3</string>
+				<string>F8BCB2A5C715482494036168</string>
+				<string>6BDBC3F6354845ACAE7433B6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>AB42BE1B3255431B827E76E7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ColorPaletteExample-ColorPalette</string>
+			<key>productName</key>
+			<string>Pods-ColorPaletteExample-ColorPalette</string>
+			<key>productReference</key>
+			<string>0298F9A2DB714B04ADBD2AB6</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>72413C42AC87417C91753737</key>
+		<dict>
+			<key>fileRef</key>
+			<string>40B1566C7B6E4EBCA5B11A47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7473F47836374350BB8CBCEC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>yaml_private.h</string>
+			<key>path</key>
+			<string>src/yaml_private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74FF5437C6814F9DAE4DDD48</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-LibYAML.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75A42AE2B3704796A107F40B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>75ABD4A8CA4A4A399884A3B1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C996D0D55B674C3BBBA1ECE3</string>
+				<string>C5CBDCB491FB43D0B6FB0C81</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7A3395933F5343B5B14CC8FE</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D90BB46299C24F18867D1BC3</string>
+				<string>1B7661B601E945D78D92F165</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7A90A81ECB6B43779580606D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ColorPaletteExample.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7CC632115524442F8FB03280</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CD56F7DA673440A7A367BA36</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7E4ADF2F46564BBDBEDC5253</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EC91E52879E4DD798C2B6CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3CC0012D292A4E3490B33975</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>7F5FC1B6950D4D44BD8ABA8A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EACFEF3AC5B847828BE51DF8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>81A669FF52B04B0BAFAE7B90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>YAMLSerialization.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>85B9E4A5DE5C4DBC88328038</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6B189001D881436E8C1196F2</string>
+				<string>4F2535C7EE1A4D4BB3C4E9E4</string>
+				<string>8F3C1AED2E134C2F8FE99DE8</string>
+				<string>9190F5FEA21741969DB67A04</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>86AE85B018FF4C938B1E123C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>19D030F5E4ED459DB176A84A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>887DBDA1391F4F6AB95C4354</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>393136D36DAC4997A31ED31E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>895B2070FC17470CA8C943ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9D60F91C51240BD86DB101F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>89A38B7CABF044E9BDBD9AE0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32BB953E0F234637B7752C64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8F3C1AED2E134C2F8FE99DE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-ColorPalette-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9190F5FEA21741969DB67A04</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-ColorPalette-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93DFE3C1457549078FB865A8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56E9FBDCEA1E407CAE0CF624</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>95066854A1854782BD5E0ECF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D73BF188A31E4ACAAC7E8A77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96B86F5E2B08465EA952FA39</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A2717CAA823645F284EA2F7D</string>
+				<string>B1B27346D0924CD390F19B5E</string>
+				<string>895B2070FC17470CA8C943ED</string>
+				<string>37943AC0A6144B4CA18CBFD3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>995F746ACA31411DA3585814</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FFE45522F8714F4B901A97EC</string>
+				<string>6BE93F782AE345B4A27C7882</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9BC05FE8EF0D4649B4A458A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F3C1AED2E134C2F8FE99DE8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E19A30275E24378995C0DB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2E2C28FC6C734315BE435752</string>
+				<string>1B60E332F08B4A2BA3535552</string>
+				<string>6846378020B949F1A0D01B8F</string>
+				<string>0273F9EA5E6F41859B38B86B</string>
+				<string>44AB888E99B24C14BC31D665</string>
+				<string>B27F24FEDE034A5EA3210D91</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FFE3CBB8055457BACE280C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A2717CAA823645F284EA2F7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACD47C6D71FC4B2AACCC2426</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AB42BE1B3255431B827E76E7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>BBBD26F6C2DE4305B14A45C5</string>
+			<key>targetProxy</key>
+			<string>5B05A4663DA14FF7AFAF9E7A</string>
+		</dict>
+		<key>AB8D36F1E6BE444AA4A5A766</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>75ABD4A8CA4A4A399884A3B1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>693CA924BC3441208F1D48CD</string>
+				<string>93DFE3C1457549078FB865A8</string>
+				<string>D4420F16FAD1484BB25CAAE6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ColorPaletteExample-LibYAML</string>
+			<key>productName</key>
+			<string>Pods-ColorPaletteExample-LibYAML</string>
+			<key>productReference</key>
+			<string>B9D60F91C51240BD86DB101F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>ACD47C6D71FC4B2AACCC2426</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>AE77A5B4A1E74699884FE112</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DFBF331471F4F78BF3DE5B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AEB2232859C342E5A621923D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>75A42AE2B3704796A107F40B</string>
+				<string>44E9158ED99A437EA07CBF38</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B1B27346D0924CD390F19B5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0298F9A2DB714B04ADBD2AB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B27F24FEDE034A5EA3210D91</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>361FAE634102498988623A7D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9D60F91C51240BD86DB101F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ColorPaletteExample-LibYAML.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BA04300E7AAD487E864FD6BC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7F5FC1B6950D4D44BD8ABA8A</string>
+				<string>DBDCF15494714F92A4BD3900</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BBBD26F6C2DE4305B14A45C5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7A3395933F5343B5B14CC8FE</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5C6F5AFB0F6C4B3B998561FC</string>
+				<string>344D8E5E6AEA4C339A6B295D</string>
+				<string>BA04300E7AAD487E864FD6BC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>542E8F87D8AE48D28CAF6A58</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework</string>
+			<key>productName</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework</string>
+			<key>productReference</key>
+			<string>46C7E1E4A23647A88460AAB7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>BDBC3B28B7D74F0EB4D4024D</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>AEB2232859C342E5A621923D</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9E19A30275E24378995C0DB6</string>
+			<key>productRefGroup</key>
+			<string>44AB888E99B24C14BC31D665</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F4C2919C5912484DBFBD16AB</string>
+				<string>71B3D540BAAA4B718494107D</string>
+				<string>AB8D36F1E6BE444AA4A5A766</string>
+				<string>BBBD26F6C2DE4305B14A45C5</string>
+			</array>
+		</dict>
+		<key>C50F4711CEC04696BBEFEC72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>scanner.c</string>
+			<key>path</key>
+			<string>src/scanner.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C52613F2183F4C2FB303A8E6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EACFEF3AC5B847828BE51DF8</string>
+				<string>81A669FF52B04B0BAFAE7B90</string>
+				<string>2F971ACD800843B693A6806E</string>
+				<string>5FFB155834B64A069578138F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>YAML-Framework</string>
+			<key>path</key>
+			<string>YAML-Framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5CBDCB491FB43D0B6FB0C81</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0C32CD2FA2CA477EB7A353B2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-LibYAML-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C996D0D55B674C3BBBA1ECE3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0C32CD2FA2CA477EB7A353B2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-LibYAML-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CD56F7DA673440A7A367BA36</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>reader.c</string>
+			<key>path</key>
+			<string>src/reader.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CF0D9089364D495997A00A6D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>BDBC3B28B7D74F0EB4D4024D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>71B3D540BAAA4B718494107D</string>
+			<key>remoteInfo</key>
+			<string>Pods-ColorPaletteExample-ColorPalette</string>
+		</dict>
+		<key>D4420F16FAD1484BB25CAAE6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2159A07542CF480BB14BF986</string>
+				<string>3268CEA8C8894CDCBD5862EC</string>
+				<string>2064D1621B2944E28994E740</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D73BF188A31E4ACAAC7E8A77</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8EDE92B07E64D0AA64723C2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>BDBC3B28B7D74F0EB4D4024D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>BBBD26F6C2DE4305B14A45C5</string>
+			<key>remoteInfo</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework</string>
+		</dict>
+		<key>D90BB46299C24F18867D1BC3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2E2BDE6E62C445FABA73CCB7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-YAML-Framework-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DBDCF15494714F92A4BD3900</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F971ACD800843B693A6806E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E23C4D9FAE9344688823E38E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E389FC20F6AE48E9BB073357</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E42BC1D4D8944F858D1B6441</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E667B10244EB42F8B75FC8B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>74FF5437C6814F9DAE4DDD48</string>
+				<string>0C32CD2FA2CA477EB7A353B2</string>
+				<string>40B1566C7B6E4EBCA5B11A47</string>
+				<string>F567CDB12F674F6A9674BE5B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>EACFEF3AC5B847828BE51DF8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>YAMLSerialization.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB539BF8F5374A858B728B89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>loader.c</string>
+			<key>path</key>
+			<string>src/loader.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0E00F420A664378A89C122F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>81A669FF52B04B0BAFAE7B90</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1E91C5AEB0B4A3A83FC7A58</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>BDBC3B28B7D74F0EB4D4024D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>AB8D36F1E6BE444AA4A5A766</string>
+			<key>remoteInfo</key>
+			<string>Pods-ColorPaletteExample-LibYAML</string>
+		</dict>
+		<key>F37EBA9B7B8147F7939FBCB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-YAML-Framework.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4C2919C5912484DBFBD16AB</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FF5D70B5396F4DBF8A8CA2B2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>887DBDA1391F4F6AB95C4354</string>
+				<string>96B86F5E2B08465EA952FA39</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>4ABC62A46AE446F5A42EECF6</string>
+				<string>1F1CB236B65441CD9E586F3F</string>
+				<string>35053C6D55604EA099E6A1EC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ColorPaletteExample</string>
+			<key>productName</key>
+			<string>Pods-ColorPaletteExample</string>
+			<key>productReference</key>
+			<string>7A90A81ECB6B43779580606D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>F567CDB12F674F6A9674BE5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-LibYAML-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5F07DB7B1F247B892F5AF9D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7E4ADF2F46564BBDBEDC5253</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F7CEA80AA76743BAA25F7105</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ColorPaletteExample-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8BCB2A5C715482494036168</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FCC04FD5CBEA42E290CE3F33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FCC04FD5CBEA42E290CE3F33</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACD47C6D71FC4B2AACCC2426</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF5D70B5396F4DBF8A8CA2B2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F5F07DB7B1F247B892F5AF9D</string>
+				<string>404AD40A16A247BEA79766A7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FFD559D3BE3B40BF9325509A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACD47C6D71FC4B2AACCC2426</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE45522F8714F4B901A97EC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F2535C7EE1A4D4BB3C4E9E4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-ColorPaletteExample-ColorPalette-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>BDBC3B28B7D74F0EB4D4024D</string>
+</dict>
+</plist>

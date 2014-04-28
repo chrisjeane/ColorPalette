@@ -2,22 +2,24 @@
 //  CPEModelController.m
 //  ColorPaletteExample
 //
-//  Created by Chris Jeane on 4/28/14.
-//  Copyright (c) 2014 Chris Jeane. All rights reserved.
+//  Copyright (C) 2014 Chris Jeane
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
+//  (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge,
+//  publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+//  subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+//  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
 #import "CPEModelController.h"
 
 #import "CPEDataViewController.h"
-
-/*
- A controller object that manages a simple model -- a collection of month names.
- 
- The controller serves as the data source for the page view controller; it therefore implements pageViewController:viewControllerBeforeViewController: and pageViewController:viewControllerAfterViewController:.
- It also implements a custom method, viewControllerAtIndex: which is useful in the implementation of the data source methods, and in the initial configuration of the application.
- 
- There is no need to actually create view controllers for each page in advance -- indeed doing so incurs unnecessary overhead. Given the data model, these methods create, configure, and return a new view controller on demand.
- */
 
 @interface CPEModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
@@ -38,21 +40,17 @@
 
 - (CPEDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
-    // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
-    
-    // Create a new view controller and pass suitable data.
+
     CPEDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"CPEDataViewController"];
     dataViewController.dataObject = self.pageData[index];
     return dataViewController;
 }
 
 - (NSUInteger)indexOfViewController:(CPEDataViewController *)viewController
-{   
-     // Return the index of the given data view controller.
-     // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
+{
     return [self.pageData indexOfObject:viewController.dataObject];
 }
 
