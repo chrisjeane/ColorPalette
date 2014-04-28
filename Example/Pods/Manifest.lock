@@ -1,0 +1,20 @@
+PODS:
+  - ColorPalette (0.1.0):
+    - YAML-Framework (~> 0.0.2)
+  - LibYAML (0.1.4)
+  - YAML-Framework (0.0.2):
+    - LibYAML (~> 0.1.4)
+
+DEPENDENCIES:
+  - ColorPalette (from `../`)
+
+EXTERNAL SOURCES:
+  ColorPalette:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ColorPalette: 4c6fd391a6eef9c75cabcd6db29b624cf87f5fc5
+  LibYAML: 66876e9cf33f78ed8985bee1234753a1f675976a
+  YAML-Framework: 8ac087fa5dad49246f5e7c0894759dacb3644dfe
+
+COCOAPODS: 0.32.1

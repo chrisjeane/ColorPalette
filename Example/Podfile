@@ -1,7 +1,6 @@
-pod "ColorPalette", :path => "../"
+platform :ios, "7.1"
 
-target "Demo" do
+target "ColorPaletteExample" do
+    pod "ColorPalette", :path => "../"
 end
 
-target "DemoTests" do
-end

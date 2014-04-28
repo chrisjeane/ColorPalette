@@ -1,0 +1,13 @@
+colors:
+  january: [238, 233, 233]
+  february: [250, 235, 215]
+  march: [240, 255, 240]
+  april: [0, 255, 127]
+  may: [34, 139, 34]
+  june: [255, 215, 0]
+  july: [205, 92, 92]
+  august: [178, 34, 34]
+  september: [218, 165, 32]
+  october: [255, 140, 0]
+  november: [138, 43, 226]
+  december: [216, 191, 216]
