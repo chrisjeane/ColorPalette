@@ -28,7 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.palette = [ColorPalette sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +39,7 @@
 {
     [super viewWillAppear:animated];
     self.dataLabel.text = [self.dataObject description];
-    [self.view setBackgroundColor:[self.palette colorWithName:[self.dataLabel.text lowercaseString]]];
+    [self.view setBackgroundColor:[ColorPalette colorNamed:[self.dataLabel.text lowercaseString]]];
 }
 
 @end

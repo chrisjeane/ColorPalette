@@ -30,6 +30,8 @@
 
 @implementation ColorPalette
 
+static ColorPalette *sharedInstance;
+
 + (id)sharedInstance
 {
     return [ColorPalette sharedInstanceWithPalette:@"default"];
@@ -37,7 +39,6 @@
 
 + (id)sharedInstanceWithPalette:(NSString *)palette
 {
-    static ColorPalette *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[self alloc] initWithPalette:palette];
@@ -45,11 +46,30 @@
     return sharedInstance;
 }
 
++ (UIColor *)colorNamed:(NSString *)name
+{
+    if (sharedInstance.paletteColors == nil) {
+        [ColorPalette sharedInstance];
+    }
+    
+    if (sharedInstance.paletteColors != nil) {
+        UIColor *color = [[sharedInstance.paletteColors objectForKey:name] colorValue];
+        if (color != nil) {
+            return color;
+        } else {
+            return nil;
+        }
+    } else {
+        return nil;
+    }
+}
+
 - (id)initWithPalette:(NSString *)palette
 {
     self = [super init];
     if (self) {
         self.paletteName = palette;
+        [self loadPalette:self.paletteName];
     }
     return self;
 }
@@ -95,7 +115,7 @@
     return nil;
 }
 
-- (UIColor *)colorWithName:(NSString *)name
+- (UIColor *)colorNamed:(NSString *)name
 {
     if (self.paletteColors == nil) {
         [self loadPalette:self.paletteName];

@@ -23,8 +23,10 @@
 
 + (id)sharedInstance;
 + (id)sharedInstanceWithPalette:(NSString *)palette;
++ (UIColor *)colorNamed:(NSString *)name;
+
 - (NSArray *)colorNames;
-- (UIColor *)colorWithName:(NSString *)name;
 - (void)loadPalette:(NSString *)palette;
+- (UIColor *)colorNamed:(NSString *)name;
 
 @end
